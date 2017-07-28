@@ -22,6 +22,7 @@
   z-index          : 10;
   font-size        : 0.7em;
   margin-top       : 15px;
+  margin-left      : -5000px;
 }
 
 .infobulle:before,
@@ -52,15 +53,5 @@
 
 .trigger-infobulle:hover .infobulle{
   opacity : 1;
-}
-
-.tester {
-    color: var(beautifulColor);
-    border-radius:10%;
-    border : 1px solid black;
-    width:100px;
-    height:100px;
-    text-align:center;
-    margin: auto;
-    margin-top:40%;
+  margin-left: 0px;
 }

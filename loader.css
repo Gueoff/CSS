@@ -1,0 +1,55 @@
+/*
+ * Declare variables
+ * -----------------
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+
+
+.loader, .loader:after, .loader:before {
+    content          : '';
+    width            : 8px;
+    background : linear-gradient(to bottom,  rgb(240, 85, 0), rgb(242, 118, 50));
+    position         : absolute;
+    left             : 0;
+    right            : 0;
+    bottom           : 0;
+    margin           : auto;
+}
+
+.loader:before {
+    margin-left       : -20px;
+    animation         : line-grow 0.5s 0s ease-in-out alternate infinite;
+    -webkit-animation : line-grow 0.5s 0s ease-in-out alternate infinite;
+}
+.loader {
+    animation         : line-grow 0.5s 0.2s ease alternate infinite;
+    -webkit-animation : line-grow 0.5s 0.2s ease alternate infinite;
+}
+.loader:after {
+    margin-left       : 20px;
+    animation         : line-grow 0.5s 0.4s ease alternate infinite;
+    -webkit-animation : line-grow 0.5s 0.4s ease alternate infinite;
+}
+ @-webkit-keyframes line-grow {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 75%;
+    }
+}
+
+@keyframes line-grow {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 75%;
+    }
+}
